@@ -1,14 +1,36 @@
 import math
 ch='y'
 while ch=='y' or ch=='Y':
-    print("Menu for Calcultors.")
-    print("1.For normal Calculator.")
-    print("2.For area and perimeter Calculator.")
-    print("3.For surface area and volume Calculator.")
+    print('''\n+--------------------------------------+
+|         MENU FOR CALCULATOR          |
++--------------------------------------+
+|1.FOR NORMAL CALCULATION(+,-,*,/)     |
++--------------------------------------+
+|2.FOR AREA AND PERIMETER OF 2D SHAPE  |
++--------------------------------------+
+|3.FOR AREA AND VOLUME OF 3D SHAPE     |
++--------------------------------------+''')
     cal=input("Enter a number from the above menu: ")
     if cal == '1':
         n1 = float(input('Enter the first number: '))
-        print('You can use the following operations. +, -, /(For quotient in decimal), //(For quotient without decimal), *, **(Exponential), sqrt, sin, cos, tan, cot, sec, cosec.')
+        print('''\n+--------------------------------------------+
+|            MENU FOR OPERATION              |
++--------------------------------------------+
+|1.ADDITION(+)                               |
++--------------------------------------------+
+|2.SUBTRACTION(-)                            |
++--------------------------------------------+
+|3.DIVISION(/)(FOR QUOTIENT IN DECIMAL)      |
++--------------------------------------------+
+|4.DIVISION FOR QUOTION WITHOUT DECIMAL(//)  |
++--------------------------------------------+
+|5.MULTIPLICATION(*)                         |
++--------------------------------------------+
+|6.SQUARE(**)                                |
++--------------------------------------------+
+|7.TRIGONOMETRIC FUNTION(COS,TAN,SIN AND ETC)|
++--------------------------------------------+''')
+        print("PLEASE TYPE SYMBOLS")
         op = input('Enter the operation you wish to use: ')
         if op == '+':
             n2 = float(input('Enter the second number: '))
@@ -64,12 +86,19 @@ while ch=='y' or ch=='Y':
         else:
             print("Operator not present here!!!")
     elif cal=='2':
-        print("Menu or shapes.")
-        print("1.Square")
-        print("2.Rect5angle")
-        print("3.Triangle")
-        print("4.Circle")
-        print("5.Parallelogram")
+        print('''\n+--------------------------------------+
+|           FOR WHICH SHAPE            |
++--------------------------------------+
+|1.SQUARE                              |
++--------------------------------------+
+|2.RECTANGLE                           |
++--------------------------------------+
+|3.TRIANGLE                            |
++--------------------------------------+
+|4.CIRCLE                              |
++--------------------------------------+
+|5.PARALLELOGRAM                       |
++--------------------------------------+''')
         shp=int(input("Enter the number of a shape from the above menu: "))
         if shp==1:
             r=int(input("Enter side of square (in m): "))
@@ -110,12 +139,19 @@ while ch=='y' or ch=='Y':
         else:
             print("Please enter a number from the above menu.")
     elif cal=='3':
-        print("Menu for 3-D shapes.")
-        print("1.Cube")
-        print("2.Cuboid")
-        print("3.Cone")
-        print("4.Sphere")
-        print("5.Cylinder")
+        print('''\n+--------------------------------------+
+|         FOR WHICH 3-D SHAPE          |
++--------------------------------------+
+|1.CUBE                                |
++--------------------------------------+
+|2.CUBOID                              |
++--------------------------------------+
+|3.CONE                                |
++--------------------------------------+
+|4.SPHERE                              |
++--------------------------------------+
+|5.CYLINDER                            |
++--------------------------------------+''')
         k=int(input("Choose a 3-D shape from type above menu: "))
         if k==1:
             f=float(input("Enter length of side of cube: "))
