@@ -134,12 +134,12 @@ while ch=='y' or ch=='Y':
             h=float(input("Enter height of cone (in m): "))
             l=math.sqrt((r*2+h*2))
             surf=math.pi*r*(l+r)
-            vol=(1/3)math.pi(r**2)*h
+            vol=(1/3)*math.pi*(r**2)*h
             print("Total Surface Area and Volume of Cone is: ", surf, 'square metre and', vol, 'cubic metre')
         elif k==4:
             r=float(input("Enter radius of sphere (in m): "))
             surf=4*math.pi*(r**2)
-            vol=(4/3)math.pi(r**3)
+            vol=(4/3)*math.pi*(r**3)
             print("Total Surface Area and Volume of Sphere is: ", surf, 'square metre and', vol, 'cubic metre')
         elif k==5:
             r=float(input("Enter radius of cylinder (in m): "))
