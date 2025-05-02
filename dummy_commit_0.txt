@@ -1,0 +1,1 @@
+This is simulated commit number 0 to Area-Calculator
